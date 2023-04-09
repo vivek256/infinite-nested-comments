@@ -9,7 +9,7 @@ const comments = {
 };
 const App = () => {
   const [commentsData, setCommentsData] = useState(comments);
-
+  console.log(commentsData)
   const { insertNode, editNode, deleteNode } = useNode();
 
   const handleInsertNode = (folderId, item) => {
